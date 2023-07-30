@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Reset style -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Designer Meetup</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="#" class="header-wrapper__logo">
+            <svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_433)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.8962 55.3956C30.2991 59.3543 41.3972 49.1631 37.1696 31.6224C37.2794 32.2907 37.3362 32.978 37.3362 33.6766C37.3362 40.6133 31.7134 46.2362 24.7766 46.2362C19.0553 46.2362 14.2276 42.4119 12.7111 37.179C12.304 35.7724 11.4067 34.7197 10.0833 34.0931C8.75994 33.4664 7.37599 33.4418 6.02991 34.0192L5.99962 34.0325C3.78266 34.9829 2.59182 37.3381 3.14086 39.6875C4.65543 46.1756 8.57062 51.7398 13.8981 55.3956H13.8962ZM5.48466 21.2324C8.51382 21.2324 10.9693 23.6879 10.9693 26.7171C10.9693 29.7462 8.51382 32.2017 5.48466 32.2017C2.45551 32.2017 0 29.7462 0 26.7171C0 23.6879 2.45551 21.2324 5.48466 21.2324Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M34.3524 50.373C37.8397 46.0754 39.093 39.6119 37.1676 31.6206C37.2774 32.2889 37.3342 32.9762 37.3342 33.6747C37.3342 40.6115 31.7113 46.2344 24.7746 46.2344C19.0533 46.2344 14.2255 42.4101 12.7091 37.1772C12.302 35.7705 11.4046 34.7179 10.0813 34.0913C8.88855 33.5271 7.65039 33.4514 6.43304 33.8622C9.47735 48.4173 21.6886 54.9697 34.3543 50.3711L34.3524 50.373Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.8961 55.3957C30.299 59.3544 41.3971 49.1632 37.1676 31.6206C37.2774 32.2889 37.3342 32.9762 37.3342 33.6747C37.3342 36.117 36.6356 38.3964 35.4296 40.3256C34.6364 50.284 26.2797 56.4086 13.8942 55.3938L13.8961 55.3957Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M37.1676 31.6206C41.3971 49.1613 30.299 59.3544 13.8942 55.3957C18.1275 58.2999 23.2505 60 28.7731 60C43.3111 60 55.0964 48.2147 55.0964 33.6766C55.0964 30.0151 54.3486 26.5297 52.9987 23.3624C52.0578 21.1549 50.4599 19.5911 48.2335 18.6994C46.0071 17.8058 43.7712 17.8323 41.5675 18.7789L41.4709 18.8205C37.2812 20.6172 35.1949 25.3086 36.6659 29.6232C36.8855 30.2669 37.054 30.9352 37.1676 31.6225V31.6206ZM38.1142 0C43.0536 0 47.0578 4.00416 47.0578 8.94358C47.0578 13.883 43.0536 17.8872 38.1142 17.8872C33.1748 17.8872 29.1706 13.883 29.1706 8.94358C29.1706 4.00416 33.1748 0 38.1142 0Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M44.9658 28.4496C41.6281 20.0891 43.3774 18.2091 48.2354 18.6995C46.009 17.8059 43.7731 17.8324 41.5694 18.779L41.4728 18.8206C37.2831 20.6173 35.1968 25.3087 36.6678 29.6234C36.8875 30.2671 37.056 30.9354 37.1696 31.6226C41.399 49.1633 30.3009 59.3545 13.8981 55.3977C20.5717 58.2508 27.3248 58.1391 32.978 56.0244C43.8375 51.9615 50.6304 40.5018 44.9677 28.4515L44.9658 28.4496Z"
+                  fill="white" />
+              </g>
+            </svg>
+            Designer Meetup
+          </a>
+          <nav class="header-wrapper__menu">
+            <ul class="header-wrapper__list">
+              <li>
+                <a href="#" class="header-wrapper__link">Home</a>
+              </li>
+              <li>
+                <a href="#" class="header-wrapper__link">About Meetup</a>
+              </li>
+              <li>
+                <a href="#" class="header-wrapper__link">Schedule</a>
+              </li>
+              <li>
+                <a href="#" class="header-wrapper__link">Speakers</a>
+              </li>
+              <li>
+                <a href="#" class="header-wrapper__link">Sponsors</a>
+              </li>
+              <li>
+                <a href="#" class="header-wrapper__link">VENUE</a>
+              </li>
+              <li>
+                <a href="#" class="header-wrapper__link">Blog</a>
+              </li>
+            </ul>
+            <a href="#" class="header-wrapper__button button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_1_455" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                  height="24">
+                  <rect width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_1_455)">
+                  <path
+                    d="M9.2 16L12 13.9L14.75 16L13.7 12.6L16.5 10.4H13.1L12 7L10.9 10.4H7.5L10.25 12.6L9.2 16ZM4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.196 19.021 2 18.55 2 18V14C2.55 14 3.021 13.804 3.413 13.412C3.80433 13.0207 4 12.55 4 12C4 11.45 3.80433 10.979 3.413 10.587C3.021 10.1957 2.55 10 2 10V6C2 5.45 2.196 4.97933 2.588 4.588C2.97933 4.196 3.45 4 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.8043 4.97933 22 5.45 22 6V10C21.45 10 20.979 10.1957 20.587 10.587C20.1957 10.979 20 11.45 20 12C20 12.55 20.1957 13.0207 20.587 13.412C20.979 13.804 21.45 14 22 14V18C22 18.55 21.8043 19.021 21.413 19.413C21.021 19.8043 20.55 20 20 20H4Z"
+                    fill="white" />
+                </g>
+              </svg>
+              Get Ticket
+            </a>
+          </nav>
+          <div class="header-wrapper__burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="meet">
+        <div class="container">
+          <div class="meet-wrapper">
+            <img class="two-circles" src="img/main/meet/decor/twoCirclesOneYellowAndOnePink.svg" alt="decor">
+            <div class="meet-wrapper__body">
+              <h1 class="meet-wrapper__title">Designer's Meetup 2023</h1>
+              <p class="meet-wrapper__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit quis dui lacus. Aenean purus ut ac sit.
+                Nullam habitant at tempus ut. Enim turpis sollicitudin magna nunc facilisis id commodo.
+              </p>
+            </div>
+            <div class="meet-wrapper__data data">
+              <div class="data__data">02 Feb 2023</div>
+              <div class="data__text">Bangabandhu International Conference Center</div>
+            </div>
+            <div class="meet-wrapper__button">
+              <a href="#">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29.5" stroke="url(#paint0_linear_1_507)" stroke-dasharray="2 2" />
+                  <mask id="mask0_1_507" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="18" y="18" width="24"
+                    height="24">
+                    <rect x="42" y="42" width="24" height="24" transform="rotate(-180 42 42)" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_1_507)">
+                    <path d="M31 22L31 34.175L36.6 28.575L38 30L30 38L22 30L23.4 28.575L29 34.175L29 22L31 22Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <linearGradient id="paint0_linear_1_507" x1="30" y1="0" x2="30" y2="60"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#61E8EC" />
+                      <stop offset="1" stop-color="#1F2636" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+            <img class="two-half-circles" src="img/main/meet/decor/twoPinkSemiCircles.svg" alt="decor">
+            <img class="waves" src="img/main/meet/decor/threeWaves.svg" alt="decor">
+          </div>
+        </div>
+      </section>
+      <section class="community">
+        <div class="container">
+          <div class="community-wrapper">
+            <img class="arrows" src="img/main/community/decor/arrows.svg" alt="decor">
+            <img class="points" src="img/main/community/decor/points.svg" alt="decor">
+            <h2 class="community-wrapper__title">
+              Meet & Learn from <br />
+              Community Leaders
+            </h2>
+            <div class="community-wrapper__row">
+              <div class="community-wrapper__column">
+                <div class="community-wrapper__content">
+                  <div class="community-wrapper__icon">
+                    <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.4452 11.5263C6.35004 11.5599 6.24992 11.5769 6.1491 11.5769C2.9522 11.5769 0.360657 8.98539 0.360657 5.78845C0.360657 2.59155 2.95233 0 6.1491 0C9.34618 0 11.9375 2.59168 11.9375 5.78845C11.9375 5.87486 11.925 5.96076 11.9003 6.04357C11.5821 7.10812 10.8303 8.19391 9.66222 9.32312C8.51058 10.4363 7.44551 11.1738 6.44508 11.5264L6.4452 11.5263ZM21.4312 19.8109L22.8092 21.1889C24.1828 22.5626 26.4098 22.5626 27.7834 21.1889C29.1571 19.8152 29.1571 17.588 27.7834 16.2142L21.5495 9.98023C19.4802 7.91095 19.4802 4.55608 21.5495 2.48703C23.6187 0.417749 26.9736 0.417749 29.0427 2.48703L30.3785 3.82283C30.7263 4.17054 30.7263 4.73446 30.3785 5.0823C30.0308 5.43001 29.4668 5.43001 29.1192 5.0823L27.7832 3.74633C26.4095 2.37264 24.1825 2.37264 22.8089 3.74633C21.4353 5.12001 21.4353 7.34716 22.8089 8.72102L29.0429 14.955C31.1122 17.0241 31.1122 20.3791 29.0429 22.4482C26.9736 24.5173 23.6187 24.5173 21.5497 22.4482L20.1717 21.0702C19.5107 21.6349 18.5273 21.6421 17.8568 21.0673L8.12068 12.7221C9.02973 12.2309 9.94856 11.524 10.9008 10.6037C11.8693 9.66735 12.6064 8.73412 13.1033 7.7829L21.4287 17.4957C22.0036 18.1662 21.9964 19.1497 21.4316 19.8107L21.4312 19.8109Z"
+                        fill="#FD6585" />
+                    </svg>
+                  </div>
+                  <div class="community-wrapper__text">40+ Speaker</div>
+                </div>
+              </div>
+              <div class="community-wrapper__column">
+                <div class="community-wrapper__content">
+                  <div class="community-wrapper__icon">
+                    <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M20.0289 22.4471H14.7773V19.1128H13.2243V22.4471H7.97213C7.45528 22.4471 7.19538 22.8352 7.19538 23.2239C7.19538 23.6123 7.45531 24.0001 7.97213 24.0001H20.0286C20.5455 24.0001 20.8054 23.612 20.8054 23.2233C20.8054 22.835 20.5454 22.4471 20.0289 22.4471Z"
+                        fill="#FD6585" />
+                      <path
+                        d="M26.9697 0.991075H15.1175V0.489237C15.1175 0.244918 14.9561 0 14.6283 0H13.3728C13.0474 0 12.8836 0.244319 12.8836 0.489237V0.991075H1.0299C0.513052 0.991075 0.253159 1.37916 0.253159 1.76782C0.253159 2.15648 0.513082 2.54457 1.0299 2.54457H26.9701C27.4869 2.54457 27.7468 2.15648 27.7468 1.76782C27.7465 1.37913 27.4872 0.991075 26.9704 0.991075H26.9697Z"
+                        fill="#FD6585" />
+                      <path
+                        d="M26.1929 16.7597V3.32086L24.7254 3.32866V16.7598L3.27484 16.7595V3.32836L1.80594 3.32056V16.7594C1.28909 16.7594 1.0292 17.1474 1.0292 17.5361C1.0292 17.9248 1.28912 18.3128 1.80594 18.3128H26.1925C26.7093 18.3128 26.9692 17.9248 26.9692 17.5361C26.9692 17.1477 26.7093 16.7599 26.1925 16.7599L26.1929 16.7597Z"
+                        fill="#FD6585" />
+                    </svg>
+                  </div>
+                  <div class="community-wrapper__text">
+                    60+ Session
+                  </div>
+                </div>
+              </div>
+              <div class="community-wrapper__column">
+                <div class="community-wrapper__content">
+                  <div class="community-wrapper__icon">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_1_498" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28"
+                        height="28">
+                        <rect width="28" height="28" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_1_498)">
+                        <path
+                          d="M6.18333 25.0833C5.6 25.0833 5.10416 24.8791 4.69583 24.4708C4.2875 24.0624 4.08333 23.5666 4.08333 22.9833V7.34992C4.08333 6.76659 4.2875 6.27075 4.69583 5.86242C5.10416 5.45409 5.6 5.24992 6.18333 5.24992H7.81666V2.77075H9.59583V5.24992H18.4333V2.77075H20.1833V5.24992H21.8167C22.4 5.24992 22.8958 5.45409 23.3042 5.86242C23.7125 6.27075 23.9167 6.76659 23.9167 7.34992V22.9833C23.9167 23.5666 23.7125 24.0624 23.3042 24.4708C22.8958 24.8791 22.4 25.0833 21.8167 25.0833H6.18333ZM6.18333 23.3333H21.8167C21.8944 23.3333 21.9722 23.2944 22.05 23.2166C22.1278 23.1388 22.1667 23.061 22.1667 22.9833V12.0166H5.83333V22.9833C5.83333 23.061 5.87222 23.1388 5.94999 23.2166C6.02777 23.2944 6.10555 23.3333 6.18333 23.3333ZM5.83333 10.2666H22.1667V7.34992C22.1667 7.27214 22.1278 7.19436 22.05 7.11659C21.9722 7.03881 21.8944 6.99992 21.8167 6.99992H6.18333C6.10555 6.99992 6.02777 7.03881 5.94999 7.11659C5.87222 7.19436 5.83333 7.27214 5.83333 7.34992V10.2666Z"
+                          fill="#FD6585" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="community-wrapper__text">
+                    3 Days Event
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about-wrapper">
+            <div class="about-wrapper-decor">
+              <img src="img/main/about/decor/one.svg" alt="decor" class="about-wrapper-decor__one">
+              <img src="img/main/about/decor/two.svg" alt="decor" class="about-wrapper-decor__two">
+            </div>
+            <div class="about-wrapper__content">
+              <div class="about-wrapper__body">
+                <h3 class="about-wrapper__title">About Meetup Event</h3>
+                <div class="about-wrapper__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit quis dui lacus. Aenean purus ut ac
+                  sit.
+                  Nullam habitant at tempus ut. Enim turpis sollicitudin magna nunc facilisis odo.Lorem ipsum dolor sit
+                  amet, consectetur adipiscing
+                  sit quis dui lacus. Aenean purus ut ac sit.
+                </div>
+              </div>
+              <div class="about-wrapper__items about-items">
+                <div class="about-items__item">
+                  <div class="about-items__icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle opacity="0.2" cx="30" cy="30" r="30" fill="#D6377F" />
+                      <mask id="mask0_1_249" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="12" width="36"
+                        height="36">
+                        <rect x="12" y="12" width="36" height="36" fill="#D6377F" />
+                      </mask>
+                      <g mask="url(#mask0_1_249)">
+                        <path
+                          d="M24 39C23.575 39 23.2185 38.856 22.9305 38.568C22.6435 38.281 22.5 37.925 22.5 37.5C22.5 37.075 22.6435 36.719 22.9305 36.432C23.2185 36.144 23.575 36 24 36C24.425 36 24.7815 36.144 25.0695 36.432C25.3565 36.719 25.5 37.075 25.5 37.5C25.5 37.925 25.3565 38.281 25.0695 38.568C24.7815 38.856 24.425 39 24 39ZM24 33C23.575 33 23.2185 32.856 22.9305 32.568C22.6435 32.281 22.5 31.925 22.5 31.5C22.5 31.075 22.6435 30.7185 22.9305 30.4305C23.2185 30.1435 23.575 30 24 30C24.425 30 24.7815 30.1435 25.0695 30.4305C25.3565 30.7185 25.5 31.075 25.5 31.5C25.5 31.925 25.3565 32.281 25.0695 32.568C24.7815 32.856 24.425 33 24 33ZM30 39C29.575 39 29.219 38.856 28.932 38.568C28.644 38.281 28.5 37.925 28.5 37.5C28.5 37.075 28.644 36.719 28.932 36.432C29.219 36.144 29.575 36 30 36C30.425 36 30.7815 36.144 31.0695 36.432C31.3565 36.719 31.5 37.075 31.5 37.5C31.5 37.925 31.3565 38.281 31.0695 38.568C30.7815 38.856 30.425 39 30 39ZM30 33C29.575 33 29.219 32.856 28.932 32.568C28.644 32.281 28.5 31.925 28.5 31.5C28.5 31.075 28.644 30.7185 28.932 30.4305C29.219 30.1435 29.575 30 30 30C30.425 30 30.7815 30.1435 31.0695 30.4305C31.3565 30.7185 31.5 31.075 31.5 31.5C31.5 31.925 31.3565 32.281 31.0695 32.568C30.7815 32.856 30.425 33 30 33ZM36 39C35.575 39 35.219 38.856 34.932 38.568C34.644 38.281 34.5 37.925 34.5 37.5C34.5 37.075 34.644 36.719 34.932 36.432C35.219 36.144 35.575 36 36 36C36.425 36 36.781 36.144 37.068 36.432C37.356 36.719 37.5 37.075 37.5 37.5C37.5 37.925 37.356 38.281 37.068 38.568C36.781 38.856 36.425 39 36 39ZM36 33C35.575 33 35.219 32.856 34.932 32.568C34.644 32.281 34.5 31.925 34.5 31.5C34.5 31.075 34.644 30.7185 34.932 30.4305C35.219 30.1435 35.575 30 36 30C36.425 30 36.781 30.1435 37.068 30.4305C37.356 30.7185 37.5 31.075 37.5 31.5C37.5 31.925 37.356 32.281 37.068 32.568C36.781 32.856 36.425 33 36 33ZM19.5 45C18.675 45 17.9685 44.7065 17.3805 44.1195C16.7935 43.5315 16.5 42.825 16.5 42V21C16.5 20.175 16.7935 19.469 17.3805 18.882C17.9685 18.294 18.675 18 19.5 18H21V15H24V18H36V15H39V18H40.5C41.325 18 42.0315 18.294 42.6195 18.882C43.2065 19.469 43.5 20.175 43.5 21V42C43.5 42.825 43.2065 43.5315 42.6195 44.1195C42.0315 44.7065 41.325 45 40.5 45H19.5ZM19.5 42H40.5V27H19.5V42ZM19.5 24H40.5V21H19.5V24Z"
+                          fill="#D6377F" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="about-items__body">
+                    <h4 class="about-items__title">When</h4>
+                    <div class="about-items__text">Friday to Sunday, 1-3 July 2022</div>
+                  </div>
+                </div>
+                <div class="about-items__item">
+                  <div class="about-items__icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle opacity="0.2" cx="30" cy="30" r="30" fill="#D6377F" />
+                      <mask id="mask0_1_258" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="12" width="36"
+                        height="36">
+                        <rect x="12" y="12" width="36" height="36" fill="#D6377F" />
+                      </mask>
+                      <g mask="url(#mask0_1_258)">
+                        <path
+                          d="M30 36.7125C32.475 34.7125 34.344 32.7875 35.607 30.9375C36.869 29.0875 37.5 27.35 37.5 25.725C37.5 24.325 37.244 23.131 36.732 22.143C36.219 21.156 35.5875 20.356 34.8375 19.743C34.0875 19.131 33.275 18.6875 32.4 18.4125C31.525 18.1375 30.725 18 30 18C29.275 18 28.475 18.1375 27.6 18.4125C26.725 18.6875 25.9125 19.131 25.1625 19.743C24.4125 20.356 23.7815 21.156 23.2695 22.143C22.7565 23.131 22.5 24.325 22.5 25.725C22.5 27.35 23.131 29.0875 24.393 30.9375C25.656 32.7875 27.525 34.7125 30 36.7125ZM30 40.5C26.475 37.9 23.8435 35.375 22.1055 32.925C20.3685 30.475 19.5 28.075 19.5 25.725C19.5 23.95 19.819 22.3935 20.457 21.0555C21.094 19.7185 21.9125 18.6 22.9125 17.7C23.9125 16.8 25.0375 16.125 26.2875 15.675C27.5375 15.225 28.775 15 30 15C31.225 15 32.4625 15.225 33.7125 15.675C34.9625 16.125 36.0875 16.8 37.0875 17.7C38.0875 18.6 38.9065 19.7185 39.5445 21.0555C40.1815 22.3935 40.5 23.95 40.5 25.725C40.5 28.075 39.631 30.475 37.893 32.925C36.156 35.375 33.525 37.9 30 40.5ZM30 28.5C30.825 28.5 31.5315 28.206 32.1195 27.618C32.7065 27.031 33 26.325 33 25.5C33 24.675 32.7065 23.9685 32.1195 23.3805C31.5315 22.7935 30.825 22.5 30 22.5C29.175 22.5 28.469 22.7935 27.882 23.3805C27.294 23.9685 27 24.675 27 25.5C27 26.325 27.294 27.031 27.882 27.618C28.469 28.206 29.175 28.5 30 28.5ZM19.5 45V42H40.5V45H19.5Z"
+                          fill="#D6377F" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="about-items__body">
+                    <h4 class="about-items__title">Location</h4>
+                    <div class="about-items__text">
+                      Bangabandhu International Conference Center,
+                      Begum Rokeya Avenue, Dhaka-1207
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about-wrapper__buttons">
+                <a class="about-wrapper__button button" href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_1_268" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                      height="24">
+                      <rect width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_1_268)">
+                      <path
+                        d="M9.2 16L12 13.9L14.75 16L13.7 12.6L16.5 10.4H13.1L12 7L10.9 10.4H7.5L10.25 12.6L9.2 16ZM4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.196 19.021 2 18.55 2 18V14C2.55 14 3.021 13.804 3.413 13.412C3.80433 13.0207 4 12.55 4 12C4 11.45 3.80433 10.979 3.413 10.587C3.021 10.1957 2.55 10 2 10V6C2 5.45 2.196 4.97933 2.588 4.588C2.97933 4.196 3.45 4 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.8043 4.97933 22 5.45 22 6V10C21.45 10 20.979 10.1957 20.587 10.587C20.1957 10.979 20 11.45 20 12C20 12.55 20.1957 13.0207 20.587 13.412C20.979 13.804 21.45 14 22 14V18C22 18.55 21.8043 19.021 21.413 19.413C21.021 19.8043 20.55 20 20 20H4Z"
+                        fill="white" />
+                    </g>
+                  </svg>
+                  Get Ticket
+                </a>
+                <a class="about-wrapper__link" href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="about-wrapper__images about-images">
+              <div class="about-images__image">
+                <img class="about-images-decor" src="img/main/about/decor/three.svg" alt="decor">
+                <img src="img/main/about/one.png" alt="girl">
+              </div>
+              <div class="about-images__image">
+                <img src="img/main/about/two.png" alt="man">
+              </div>
+              <a class="about-images__link" href="#">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="23.5" transform="rotate(-90 24 24)" stroke="url(#paint0_linear_1_603)"
+                    stroke-dasharray="2 2" />
+                  <g mask="url(#mask0_1_603)">
+                    <path d="M16 23L28.175 23L22.575 17.4L24 16L32 24L24 32L22.575 30.6L28.175 25L16 25L16 23Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <linearGradient id="paint0_linear_1_603" x1="24" y1="-1.90735e-06" x2="24" y2="48"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#61E8EC" />
+                      <stop offset="1" stop-color="#1F2636" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="schedule">
+        <div class="container">
+          <div class="schedule-wrapper">
+            <div class="schedule-wrapper__top">
+              <div class="schedule-wrapper__decor">
+                <img src="img/main/schedule/decor/halfCircles.svg" alt="">
+              </div>
+              <h3 class="schedule-wrapper__title">Event Schedules</h3>
+              <div class="schedule-wrapper__days schedule-days">
+                <a class="schedule-days__day schedule-day-active" href="#">Day 01</a>
+                <a class="schedule-days__day" href="#">Day 02</a>
+                <a class="schedule-days__day" href="#">Day 03</a>
+              </div>
+            </div>
+            <div class="schedule-wrapper__bottom schedule-bottom">
+              <ul class="schedule-bottom__times schedule-times">
+                <li class="schedule-times__time">8:00 AM</li>
+                <li class="schedule-times__time">9:00 AM</li>
+                <li class="schedule-times__time">10:00 AM</li>
+                <li class="schedule-times__time">12:00 PM</li>
+              </ul>
+              <div class="schedule-bottom__cards">
+                <div class="schedule-bottom__card">
+                  <div class="schedule-bottom__body">
+                    <h4 class="schedule-bottom__title">Entry Registration & Continental Breakfast</h4>
+                    <div class="schedule-bottom__data schedule-bottom-data">
+                      <div class="schedule-bottom-data__time">
+                        <div class="schedule-bottom-data__icon">
+                          <img src="img/main/schedule/decor/clock.svg" alt="decor">
+                        </div>
+                        <div class="schedule-bottom-data__text">08:00 AM - 09:00 AM</div>
+                      </div>
+                      <div class="schedule-bottom-data__location">
+                        <div class="schedule-bottom-data__icon">
+                          <img src="img/main/schedule/decor/icon.svg" alt="decor">
+                        </div>
+                        <div class="schedule-bottom-data__text">Dining Hall</div>
+                      </div>
+                    </div>
+                    <a class="schedule-bottom__button" href="#">View Details</a>
+                  </div>
+                  <div class="schedule-bottom__users">
+                    <div class="schedule-bottom__user">
+                      <img src="img/main/schedule/users/user.png" alt="user">
+                    </div>
+                    <div class="schedule-bottom__user">
+                      <img src="img/main/schedule/users/user.png" alt="user">
+                    </div>
+                    <div class="schedule-bottom__user">
+                      <img src="img/main/schedule/users/user.png" alt="user">
+                    </div>
+                    <div class="schedule-bottom__user">
+                      <img src="img/main/schedule/users/user.png" alt="user">
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-bottom__card">
+                  <div class="schedule-bottom__body">
+                    <h4 class="schedule-bottom__title">Introduction Creative Design | Carrier Guideline</h4>
+                    <div class="schedule-bottom__data schedule-bottom-data">
+                      <div class="schedule-bottom-data__time">
+                        <div class="schedule-bottom-data__icon">
+                          <img src="img/main/schedule/decor/clock.svg" alt="decor">
+                        </div>
+                        <div class="schedule-bottom-data__text">09:00 AM - 10:00 AM</div>
+                      </div>
+                      <div class="schedule-bottom-data__location">
+                        <div class="schedule-bottom-data__icon">
+                          <img src="img/main/schedule/decor/icon.svg" alt="decor">
+                        </div>
+                        <div class="schedule-bottom-data__text">Hall of Fame 01</div>
+                      </div>
+                    </div>
+                    <a class="schedule-bottom__button" href="#">View Details</a>
+                  </div>
+                  <div class="schedule-bottom__users">
+                    <div class="schedule-bottom__user">
+                      <img src="img/main/schedule/users/user.png" alt="user">
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-bottom__card">
+                  <div class="schedule-bottom__body">
+                    <h4 class="schedule-bottom__title">Introduction UX Design | Carrier Guideline</h4>
+                    <div class="schedule-bottom__data schedule-bottom-data">
+                      <div class="schedule-bottom-data__time">
+                        <div class="schedule-bottom-data__icon">
+                          <img src="img/main/schedule/decor/clock.svg" alt="decor">
+                        </div>
+                        <div class="schedule-bottom-data__text">10:00 AM - 12:00 PM</div>
+                      </div>
+                      <div class="schedule-bottom-data__location">
+                        <div class="schedule-bottom-data__icon">
+                          <img src="img/main/schedule/decor/icon.svg" alt="decor">
+                        </div>
+                        <div class="schedule-bottom-data__text">Hall of Fame 01</div>
+                      </div>
+                    </div>
+                    <a class="schedule-bottom__button" href="#">View Details</a>
+                  </div>
+                  <div class="schedule-bottom__users">
+                    <div class="schedule-bottom__user">
+                      <img src="img/main/schedule/users/user.png" alt="user">
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-bottom__card">
+                  <div class="schedule-bottom__body">
+                    <h4 class="schedule-bottom__title">Lunch Break</h4>
+                    <div class="schedule-bottom__data schedule-bottom-data">
+                      <div class="schedule-bottom-data__time">
+                        <div class="schedule-bottom-data__icon">
+                          <img src="img/main/schedule/decor/clock.svg" alt="decor">
+                        </div>
+                        <div class="schedule-bottom-data__text">12:00 PM - 02:00 PM</div>
+                      </div>
+                      <div class="schedule-bottom-data__location">
+                        <div class="schedule-bottom-data__icon">
+                          <img src="img/main/schedule/decor/icon.svg" alt="decor">
+                        </div>
+                        <div class="schedule-bottom-data__text">Dining Hall</div>
+                      </div>
+                    </div>
+                    <a class="schedule-bottom__button" href="#">View Details</a>
+                  </div>
+                  <div class="schedule-bottom__users">
+                    <div class="schedule-bottom__user">
+                      <img src="img/main/schedule/users/user.png" alt="user">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="speakers">
+        <div class="speakers-wrapper">
+          <div class="speakers-wrapper__items swiper-container">
+            <div class="swiper-wrapper">
+              <div class="speakers-wrapper__item swiper-slide">
+                <div class="speakers-wrapper__item-wrap">
+                  <img src="img/main/speakers/image.png" alt="man">
+                  <div class="speakers-wrapper__info">
+                    <div class="speakers-wrapper__name">Afolabi David</div>
+                    <div class="speakers-wrapper__job">Designer Manager, IBM</div>
+                    <div class="speakers-wrapper__socials">
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/facebook.svg" alt="icon">
+                      </div>
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/instagram.svg" alt="icon">
+                      </div>
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/linkedin.svg" alt="icon">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="speakers-wrapper__item swiper-slide">
+                <div class="speakers-wrapper__item-wrap">
+                  <img src="img/main/speakers/image.png" alt="man">
+                  <div class="speakers-wrapper__info">
+                    <div class="speakers-wrapper__name">Afolabi David</div>
+                    <div class="speakers-wrapper__job">Designer Manager, IBM</div>
+                    <div class="speakers-wrapper__socials">
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/facebook.svg" alt="icon">
+                      </div>
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/instagram.svg" alt="icon">
+                      </div>
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/linkedin.svg" alt="icon">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="speakers-wrapper__item swiper-slide">
+                <div class="speakers-wrapper__item-wrap">
+                  <img src="img/main/speakers/image.png" alt="man">
+                  <div class="speakers-wrapper__info">
+                    <div class="speakers-wrapper__name">Afolabi David</div>
+                    <div class="speakers-wrapper__job">Designer Manager, IBM</div>
+                    <div class="speakers-wrapper__socials">
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/facebook.svg" alt="icon">
+                      </div>
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/instagram.svg" alt="icon">
+                      </div>
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/linkedin.svg" alt="icon">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="speakers-wrapper__item swiper-slide">
+                <div class="speakers-wrapper__item-wrap">
+                  <img src="img/main/speakers/image.png" alt="man">
+                  <div class="speakers-wrapper__info">
+                    <div class="speakers-wrapper__name">Afolabi David</div>
+                    <div class="speakers-wrapper__job">Designer Manager, IBM</div>
+                    <div class="speakers-wrapper__socials">
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/facebook.svg" alt="icon">
+                      </div>
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/instagram.svg" alt="icon">
+                      </div>
+                      <div class="speakers-wrapper__social">
+                        <img src="img/main/speakers/social/linkedin.svg" alt="icon">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speakers-wrapper__body">
+            <div class="speakers-wrapper__top">
+              <div class="speakers-wrapper__decor">
+                <img src="img/main/speakers/decor/decor.png" alt="decor">
+              </div>
+              <h3 class="speakers-wrapper__title">
+                Meet with <br />
+                Graeter's Speakers
+              </h3>
+              <div class="speakers-wrapper__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit quis dui lacus. Aenean purus ut ac
+                sit.
+                Nullam habitant at tempus ut. Enim turpis sollicitudin magna nunc facilisis odo.Lorem ipsum dolor sit
+                amet, consectetur adipiscing
+                sit quis dui lacus. Aenean purus ut ac sit.
+              </div>
+              <a href="#" class="speakers-wrapper__link">View All Speaker</a>
+            </div>
+            <div class="speakers-wrapper__arows">
+              <div class="speakers-wrapper__prev">
+                <img src="img/main/speakers/decor/arrows/prev.svg" alt="arrow">
+              </div>
+              <div class="speakers-wrapper__next speakers-wrapper__next_active">
+                <img src="img/main/speakers/decor/arrows/next.svg" alt="arrow">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="join">
+        <div class="container">
+          <div class="join-wrapper">
+            <div class="join-wrapper__body">
+              <div class="join-wrapper__subtitle">Why you should Join</div>
+              <h4 class="join-wrapper__title">The Designer's Meetup Event</h4>
+            </div>
+            <div class="join-wrapper__items join-items">
+              <div class="join-items__item">
+                <div class="join-items__wrapper">
+                  <div class="join-items__icon">
+                    <img src="img/main/join/icon/one.svg" alt="icon">
+                  </div>
+                  <div class="join-items__body">
+                    <h5 class="join-items__title">Networking</h5>
+                    <div class="join-items__text">
+                      You will meet and Build your Networking scale with community peoples and helo to get more tips and
+                      supports
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="join-items__item">
+                <div class="join-items__wrapper">
+                  <div class="join-items__icon">
+                    <img src="img/main/join/icon/two.svg" alt="icon">
+                  </div>
+                  <div class="join-items__body">
+                    <h5 class="join-items__title">New People</h5>
+                    <div class="join-items__text">
+                      You will meet with new people and talk to them and community leader and discus with them your
+                      further step
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="join-items__item">
+                <div class="join-items__wrapper">
+                  <div class="join-items__icon">
+                    <img src="img/main/join/icon/three.svg" alt="icon">
+                  </div>
+                  <div class="join-items__body">
+                    <h5 class="join-items__title">Great Speaker</h5>
+                    <div class="join-items__text">
+                      You will meet and talk to our great designer community leader and discus with them your further
+                      step
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="join-items__item">
+                <div class="join-items__wrapper">
+                  <div class="join-items__icon">
+                    <img src="img/main/join/icon/four.svg" alt="icon">
+                  </div>
+                  <div class="join-items__body">
+                    <h5 class="join-items__title">Have Fun</h5>
+                    <div class="join-items__text">
+                      You will meet and talk to our great designer community leader and discus with them your further
+                      step
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="venue">
+        <div class="container">
+          <div class="venue-wrapper">
+            <div class="venue-wrapper__decor-points">
+              <img src="img/main/venue/decor/points.svg" alt="decor">
+            </div>
+            <div class="venue-wrapper__images">
+              <div class="venue-wrapper__image-one venue-wrapper__image">
+                <img src="img/main/venue/one.png" alt="hall">
+                <div class="venue-wrapper__decor-square">
+                  <img src="img/main/venue/decor/square.svg" alt="decor">
+                </div>
+              </div>
+              <div class="venue-wrapper__image-two venue-wrapper__image">
+                <img src="img/main/venue/two.png" alt="canteen">
+                <div class="venue-wrapper__decor-arrows">
+                  <img src="img/main/venue/decor/arrows.svg" alt="decor">
+                </div>
+              </div>
+            </div>
+            <div class="venue-wrapper__body">
+              <div class="venue-wrapper__body-wrapper">
+                <h4 class="venue-wrapper__title">Explore Meetup Venue</h4>
+                <div class="venue-wrapper__subtitle">Bangabandhu International Conference Center (BICC)</div>
+                <div class="venue-wrapper__text">Bangabandhu International Conference Center (BICC) is the only
+                  multi-purpose convention facility in the country, having 17 (seventeen) venues for holding small to
+                  large scale events,
+                </div>
+              </div>
+              <div class="venue-wrapper__buttons">
+                <a href="#" class="venue-wrapper__link">
+                  <span>Get Direction</span>
+                  <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 14H2V10C2 9.16667 2.29167 8.45833 2.875 7.875C3.45833 7.29167 4.16667 7 5 7H14.2L10.6 10.6L12 12L18 6L12 0L10.6 1.4L14.2 5H5C3.61667 5 2.43767 5.48733 1.463 6.462C0.487666 7.43733 0 8.61667 0 10V14Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a href="#" class="venue-wrapper__button">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 18.55L5 15.675C4.68333 15.4917 4.43767 15.246 4.263 14.938C4.08767 14.6293 4 14.2917 4 13.925V8.2C4 7.83333 4.08767 7.49567 4.263 7.187C4.43767 6.879 4.68333 6.63333 5 6.45L10 3.575C10.3167 3.39167 10.65 3.3 11 3.3C11.35 3.3 11.6833 3.39167 12 3.575L17 6.45C17.3167 6.63333 17.5627 6.879 17.738 7.187C17.9127 7.49567 18 7.83333 18 8.2V13.925C18 14.2917 17.9127 14.6293 17.738 14.938C17.5627 15.246 17.3167 15.4917 17 15.675L12 18.55C11.6833 18.7333 11.35 18.825 11 18.825C10.65 18.825 10.3167 18.7333 10 18.55ZM10 16.25V11.65L6 9.35V13.95L10 16.25ZM12 16.25L16 13.95V9.35L12 11.65V16.25ZM0 5V3C0 2.16667 0.291667 1.45833 0.875 0.875C1.45833 0.291667 2.16667 0 3 0H5V2H3C2.71667 2 2.47933 2.09567 2.288 2.287C2.096 2.479 2 2.71667 2 3V5H0ZM3 22C2.16667 22 1.45833 21.7083 0.875 21.125C0.291667 20.5417 0 19.8333 0 19V17H2V19C2 19.2833 2.096 19.5207 2.288 19.712C2.47933 19.904 2.71667 20 3 20H5V22H3ZM17 22V20H19C19.2833 20 19.5207 19.904 19.712 19.712C19.904 19.5207 20 19.2833 20 19V17H22V19C22 19.8333 21.7083 20.5417 21.125 21.125C20.5417 21.7083 19.8333 22 19 22H17ZM20 5V3C20 2.71667 19.904 2.479 19.712 2.287C19.5207 2.09567 19.2833 2 19 2H17V0H19C19.8333 0 20.5417 0.291667 21.125 0.875C21.7083 1.45833 22 2.16667 22 3V5H20ZM11 9.9L15 7.6L11 5.3L7 7.6L11 9.9Z"
+                      fill="white" />
+                  </svg>
+                  <span>Virtual Tour</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sponsor">
+        <div class="container">
+          <div class="sponsor-wrapper">
+            <h5 class="sponsor-wrapper__title">Our Meetup Sponsor</h5>
+            <div class="sponsor-wrapper__logos">
+              <div class="sponsor-wrapper__row-one sponsor-row-one">
+                <div class="sponsor-row-one__logo">
+                  <img src="img/main/sponsor/logo/joom.svg" alt="joom">
+                </div>
+                <div class="sponsor-row-one__logo">
+                  <img src="img/main/sponsor/logo/webdevs.svg" alt="webdevs">
+                </div>
+                <div class="sponsor-row-one__logo">
+                  <img src="img/main/sponsor/logo/brain.svg" alt="brain">
+                </div>
+                <div class="sponsor-row-one__logo">
+                  <img src="img/main/sponsor/logo/airbnb.svg" alt="airbnb">
+                </div>
+              </div>
+              <div class="sponsor-wrapper__row-two sponsor-row-two">
+                <div class="sponsor-row-two__logo">
+                  <img src="img/main/sponsor/logo/uber.svg" alt="uber">
+                </div>
+                <div class="sponsor-row-two__logo">
+                  <img src="img/main/sponsor/logo/ebay.svg" alt="ebay">
+                </div>
+                <div class="sponsor-row-two__logo">
+                  <img src="img/main/sponsor/logo/cnn.svg" alt="cnn">
+                </div>
+                <div class="sponsor-row-two__logo">
+                  <img src="img/main/sponsor/logo/google.svg" alt="google">
+                </div>
+                <div class="sponsor-row-two__logo">
+                  <img src="img/main/sponsor/logo/cisco.svg" alt="cisco">
+                </div>
+              </div>
+            </div>
+            <a href="#" class="sponsor-wrapper__link">Became a Sponsor</a>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery-wrapper">
+          <div class="gallery-wrapper__body">
+            <div class="gallery-wrapper__decor-half-circles">
+              <img src="img/main/gallery/decor/twoHalfCircles.svg" alt="decor">
+            </div>
+            <div class="gallery-wrapper__decor-waves">
+              <img src="img/main/gallery/decor/waves.svg" alt="decor">
+            </div>
+            <h5 class="gallery-wrapper__title">Photo Gallery</h5>
+          </div>
+          <div class="gallery-wrapper__photos">
+            <div class="gallery-wrapper__row-one">
+              <div class="gallery-wrapper__photo">
+                <img src="img/main/gallery/image.png" alt="table">
+              </div>
+              <div class="gallery-wrapper__photo">
+                <img src="img/main/gallery/image.png" alt="table">
+              </div>
+              <div class="gallery-wrapper__photo">
+                <img src="img/main/gallery/image.png" alt="table">
+              </div>
+              <div class="gallery-wrapper__photo">
+                <img src="img/main/gallery/image.png" alt="table">
+              </div>
+            </div>
+            <div class="gallery-wrapper__row-two">
+              <div class="gallery-wrapper__photo">
+                <img src="img/main/gallery/image.png" alt="table">
+              </div>
+              <div class="gallery-wrapper__photo">
+                <img src="img/main/gallery/image.png" alt="table">
+              </div>
+              <div class="gallery-wrapper__photo">
+                <img src="img/main/gallery/image.png" alt="table">
+              </div>
+              <div class="gallery-wrapper__photo">
+                <img src="img/main/gallery/image.png" alt="table">
+              </div>
+              <div class="gallery-wrapper__photo">
+                <img src="img/main/gallery/image.png" alt="table">
+              </div>
+            </div>
+          </div>
+          <a href="#" class="gallery-wrapper__link">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="30" fill="#FD6585" />
+              <mask id="mask0_1_353" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="18" y="18" width="24"
+                height="24">
+                <rect x="42" y="42" width="24" height="24" transform="rotate(-180 42 42)" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_1_353)">
+                <path
+                  d="M30 22.425C30.1333 22.425 30.2583 22.446 30.375 22.488C30.4916 22.5293 30.6 22.6 30.7 22.7L37.3 29.3C37.5 29.5 37.6 29.7377 37.6 30.013C37.6 30.2877 37.5 30.525 37.3 30.725C37.1 30.925 36.8666 31.025 36.6 31.025C36.3333 31.025 36.1 30.925 35.9 30.725L31 25.825L31 37.025C31 37.3083 30.904 37.5417 30.712 37.725C30.5206 37.9083 30.2833 38 30 38C29.7166 38 29.479 37.9043 29.287 37.713C29.0956 37.521 29 37.2833 29 37L29 25.825L24.1 30.725C23.9 30.925 23.6666 31.025 23.4 31.025C23.1333 31.025 22.9 30.925 22.7 30.725C22.5 30.525 22.4 30.2877 22.4 30.013C22.4 29.7377 22.5 29.5 22.7 29.3L29.3 22.7C29.4 22.6 29.5083 22.5293 29.625 22.488C29.7416 22.446 29.8666 22.425 30 22.425Z"
+                  fill="white" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="subscription">
+        <div class="container">
+          <div class="subscription-wrapper">
+            <div class="subscription-wrapper__decor-one">
+              <img src="img/main/subscription/decorBg/one.png" alt="decor">
+            </div>
+            <div class="subscription-wrapper__decor-two">
+              <img src="img/main/subscription/decorBg/two.png" alt="decor">
+            </div>
+            <div class="subscription-wrapper__decor-three">
+              <img src="img/main/subscription/decorBg/three.png" alt="decor">
+            </div>
+            <div class="subscription-wrapper__body">
+              <div class="subscription-wrapper__subtitle">Dont miss our future updates</div>
+              <h5 class="subscription-wrapper__title">Get Subscribed Today</h5>
+            </div>
+            <form action="#" class="subscription-wrapper__form">
+              <div class="subscription-wrapper__email">
+                <input type="email" placeholder="Enter your email address">
+                <button class="subscription-wrapper__button" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-wrapper__right">
+            <a href="#" class="footer-wrapper__logo">
+              <svg width="34" height="36" viewBox="0 0 34 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_366)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.33775 33.2374C18.1795 35.6127 24.8383 29.4979 22.3018 18.9735C22.3677 19.3745 22.4017 19.7868 22.4017 20.206C22.4017 24.368 19.028 27.7418 14.866 27.7418C11.4332 27.7418 8.53654 25.4472 7.62666 22.3075C7.38243 21.4635 6.844 20.8319 6.04998 20.4559C5.25596 20.0799 4.4256 20.0651 3.61795 20.4116L3.59977 20.4195C2.26959 20.9898 1.55509 22.4029 1.88451 23.8126C2.79326 27.7054 5.14237 31.0439 8.33889 33.2374H8.33775ZM3.2908 12.7395C5.10829 12.7395 6.5816 14.2128 6.5816 16.0303C6.5816 17.8478 5.10829 19.3211 3.2908 19.3211C1.47331 19.3211 0 17.8478 0 16.0303C0 14.2128 1.47331 12.7395 3.2908 12.7395Z"
+                    fill="url(#paint0_linear_1_366)" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20.6115 30.2238C22.7039 27.6453 23.4558 23.7672 22.3006 18.9724C22.3665 19.3734 22.4006 19.7857 22.4006 20.2049C22.4006 24.367 19.0268 27.7407 14.8648 27.7407C11.432 27.7407 8.53536 25.4461 7.62548 22.3064C7.38126 21.4624 6.84282 20.8308 6.04881 20.4548C5.33317 20.1163 4.59027 20.0709 3.85986 20.3174C5.68644 29.0504 13.0132 32.9819 20.6126 30.2227L20.6115 30.2238Z"
+                    fill="#FD6585" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.33768 33.2375C18.1794 35.6127 24.8383 29.498 22.3006 18.9724C22.3665 19.3734 22.4005 19.7857 22.4005 20.2049C22.4005 21.6703 21.9814 23.0379 21.2578 24.1954C20.7818 30.1704 15.7678 33.8452 8.33655 33.2363L8.33768 33.2375Z"
+                    fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.3006 18.9724C24.8383 29.4968 18.1794 35.6126 8.33655 33.2374C10.8765 34.9799 13.9503 36 17.2638 36C25.9867 36 33.0579 28.9288 33.0579 20.206C33.0579 18.0091 32.6092 15.9178 31.7993 14.0174C31.2347 12.6929 30.276 11.7546 28.9401 11.2196C27.6042 10.6835 26.2627 10.6994 24.9405 11.2673L24.8826 11.2923C22.3687 12.3703 21.1169 15.1852 21.9996 17.7739C22.1313 18.1602 22.2324 18.5611 22.3006 18.9735V18.9724ZM22.8685 0C25.8322 0 28.2347 2.4025 28.2347 5.36615C28.2347 8.3298 25.8322 10.7323 22.8685 10.7323C19.9049 10.7323 17.5024 8.3298 17.5024 5.36615C17.5024 2.4025 19.9049 0 22.8685 0Z"
+                    fill="url(#paint1_linear_1_366)" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M26.9795 17.0697C24.9769 12.0534 26.0265 10.9254 28.9413 11.2196C27.6054 10.6835 26.2639 10.6994 24.9417 11.2673L24.8837 11.2923C22.3699 12.3703 21.1181 15.1852 22.0007 17.774C22.1325 18.1602 22.2336 18.5612 22.3018 18.9735C24.8394 29.4979 18.1806 35.6127 8.33887 33.2386C12.343 34.9504 16.3949 34.8834 19.7868 33.6146C26.3025 31.1768 30.3782 24.301 26.9807 17.0708L26.9795 17.0697Z"
+                    fill="url(#paint2_linear_1_366)" />
+                  <g clip-path="url(#clip1_1_366)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.42603 33.2909C18.3022 35.6744 24.9844 29.5383 22.439 18.977C22.5051 19.3794 22.5393 19.7932 22.5393 20.2138C22.5393 24.3905 19.1537 27.776 14.9771 27.776C11.5323 27.776 8.62552 25.4734 7.71245 22.3227C7.46737 21.4757 6.92705 20.8419 6.13025 20.4646C5.33345 20.0873 4.50018 20.0725 3.6897 20.4202L3.67146 20.4281C2.33663 21.0004 1.61962 22.4184 1.9502 23.833C2.86212 27.7395 5.21946 31.0897 8.42717 33.2909H8.42603ZM3.36141 12.7212C5.18526 12.7212 6.66373 14.1997 6.66373 16.0235C6.66373 17.8474 5.18526 19.3258 3.36141 19.3258C1.53755 19.3258 0.059082 17.8474 0.059082 16.0235C0.059082 14.1997 1.53755 12.7212 3.36141 12.7212Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.7428 30.2669C22.8425 27.6793 23.5971 23.7876 22.4378 18.9761C22.5039 19.3785 22.5381 19.7922 22.5381 20.2129C22.5381 24.3895 19.1526 27.7751 14.976 27.7751C11.5311 27.7751 8.62437 25.4724 7.7113 22.3217C7.46622 21.4748 6.9259 20.841 6.1291 20.4637C5.41096 20.124 4.66546 20.0784 3.9325 20.3257C5.76547 29.0894 13.1179 33.0346 20.7439 30.2658L20.7428 30.2669Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.42594 33.2911C18.3021 35.6746 24.9843 29.5385 22.4377 18.9761C22.5039 19.3785 22.538 19.7922 22.538 20.2129C22.538 21.6834 22.1174 23.0558 21.3913 24.2174C20.9137 30.2133 15.8821 33.9009 8.4248 33.2899L8.42594 33.2911Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M22.4377 18.9761C24.9843 29.5373 18.3021 35.6746 8.4248 33.2911C10.9736 35.0397 14.0582 36.0633 17.3834 36.0633C26.1367 36.0633 33.2327 28.9674 33.2327 20.214C33.2327 18.0094 32.7824 15.9108 31.9697 14.0038C31.4031 12.6746 30.4411 11.7331 29.1005 11.1962C27.76 10.6581 26.4137 10.6741 25.0869 11.244L25.0288 11.2691C22.5061 12.3509 21.2499 15.1756 22.1357 17.7735C22.2679 18.161 22.3693 18.5634 22.4377 18.9772V18.9761ZM23.0077 -0.0627441C25.9817 -0.0627441 28.3926 2.34817 28.3926 5.3222C28.3926 8.29623 25.9817 10.7071 23.0077 10.7071C20.0337 10.7071 17.6228 8.29623 17.6228 5.3222C17.6228 2.34817 20.0337 -0.0627441 23.0077 -0.0627441Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M27.133 17.0671C25.1233 12.0333 26.1766 10.9014 29.1016 11.1966C27.7611 10.6586 26.4149 10.6745 25.088 11.2445L25.0299 11.2695C22.5072 12.3513 21.2511 15.176 22.1368 17.7739C22.269 18.1615 22.3705 18.5638 22.4389 18.9776C24.9854 29.5389 18.3033 35.675 8.42706 33.2926C12.4453 35.0105 16.5113 34.9432 19.9151 33.6699C26.4536 31.2237 30.5436 24.3238 27.1341 17.0683L27.133 17.0671Z"
+                      fill="white" />
+                  </g>
+                </g>
+              </svg>
+              Designer Meetup
+            </a>
+            <div class="footer-wrapper__text">
+              We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat... Read More
+            </div>
+            <div class="footer-wrapper__socials">
+              <div class="footer-wrapper__social">
+                <a href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="#25232A" />
+                    <circle cx="24" cy="24" r="14" fill="url(#paint0_linear_1_391)" />
+                    <path
+                      d="M29.2137 28.2816L29.8356 24.3301H25.9452V21.767C25.9452 20.6857 26.4877 19.6311 28.2302 19.6311H30V16.267C30 16.267 28.3945 16 26.8603 16C23.6548 16 21.5617 17.8929 21.5617 21.3184V24.3301H18V28.2816H21.5617V37.8345C22.2767 37.944 23.0082 38 23.7534 38C24.4986 38 25.2302 37.944 25.9452 37.8345V28.2816H29.2137Z"
+                      fill="white" />
+                    <defs>
+                      <linearGradient id="paint0_linear_1_391" x1="24" y1="10" x2="24" y2="37.917"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#18ACFE" />
+                        <stop offset="1" stop-color="#0163E0" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="footer-wrapper__social">
+                <a href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="#25232A" />
+                    <rect x="10" y="10" width="28" height="28" rx="6" fill="url(#paint0_radial_1_394)" />
+                    <rect x="10" y="10" width="28" height="28" rx="6" fill="url(#paint1_radial_1_394)" />
+                    <rect x="10" y="10" width="28" height="28" rx="6" fill="url(#paint2_radial_1_394)" />
+                    <path
+                      d="M31 18.5C31 19.3284 30.3284 20 29.5 20C28.6716 20 28 19.3284 28 18.5C28 17.6716 28.6716 17 29.5 17C30.3284 17 31 17.6716 31 18.5Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M24 29C26.7614 29 29 26.7614 29 24C29 21.2386 26.7614 19 24 19C21.2386 19 19 21.2386 19 24C19 26.7614 21.2386 29 24 29ZM24 27C25.6569 27 27 25.6569 27 24C27 22.3431 25.6569 21 24 21C22.3431 21 21 22.3431 21 24C21 25.6569 22.3431 27 24 27Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14 23.6C14 20.2397 14 18.5595 14.654 17.2761C15.2292 16.1471 16.1471 15.2292 17.2761 14.654C18.5595 14 20.2397 14 23.6 14H24.4C27.7603 14 29.4405 14 30.7239 14.654C31.8529 15.2292 32.7708 16.1471 33.346 17.2761C34 18.5595 34 20.2397 34 23.6V24.4C34 27.7603 34 29.4405 33.346 30.7239C32.7708 31.8529 31.8529 32.7708 30.7239 33.346C29.4405 34 27.7603 34 24.4 34H23.6C20.2397 34 18.5595 34 17.2761 33.346C16.1471 32.7708 15.2292 31.8529 14.654 30.7239C14 29.4405 14 27.7603 14 24.4V23.6ZM23.6 16H24.4C26.1132 16 27.2777 16.0016 28.1779 16.0751C29.0548 16.1467 29.5032 16.2766 29.816 16.436C30.5686 16.8195 31.1805 17.4314 31.564 18.184C31.7234 18.4968 31.8533 18.9452 31.9249 19.8221C31.9984 20.7223 32 21.8868 32 23.6V24.4C32 26.1132 31.9984 27.2777 31.9249 28.1779C31.8533 29.0548 31.7234 29.5032 31.564 29.816C31.1805 30.5686 30.5686 31.1805 29.816 31.564C29.5032 31.7234 29.0548 31.8533 28.1779 31.9249C27.2777 31.9984 26.1132 32 24.4 32H23.6C21.8868 32 20.7223 31.9984 19.8221 31.9249C18.9452 31.8533 18.4968 31.7234 18.184 31.564C17.4314 31.1805 16.8195 30.5686 16.436 29.816C16.2766 29.5032 16.1467 29.0548 16.0751 28.1779C16.0016 27.2777 16 26.1132 16 24.4V23.6C16 21.8868 16.0016 20.7223 16.0751 19.8221C16.1467 18.9452 16.2766 18.4968 16.436 18.184C16.8195 17.4314 17.4314 16.8195 18.184 16.436C18.4968 16.2766 18.9452 16.1467 19.8221 16.0751C20.7223 16.0016 21.8868 16 23.6 16Z"
+                      fill="white" />
+                    <defs>
+                      <radialGradient id="paint0_radial_1_394" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(20 31) rotate(-55.3758) scale(25.5196)">
+                        <stop stop-color="#B13589" />
+                        <stop offset="0.79309" stop-color="#C62F94" />
+                        <stop offset="1" stop-color="#8A3AC8" />
+                      </radialGradient>
+                      <radialGradient id="paint1_radial_1_394" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(19 39) rotate(-65.1363) scale(22.5942)">
+                        <stop stop-color="#E0E8B7" />
+                        <stop offset="0.444662" stop-color="#FB8A2E" />
+                        <stop offset="0.71474" stop-color="#E2425C" />
+                        <stop offset="1" stop-color="#E2425C" stop-opacity="0" />
+                      </radialGradient>
+                      <radialGradient id="paint2_radial_1_394" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(8.5 11) rotate(-8.1301) scale(38.8909 8.31836)">
+                        <stop offset="0.156701" stop-color="#406ADC" />
+                        <stop offset="0.467799" stop-color="#6A45BE" />
+                        <stop offset="1" stop-color="#6A45BE" stop-opacity="0" />
+                      </radialGradient>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="footer-wrapper__social">
+                <a href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="#25232A" />
+                    <rect x="10" y="10" width="28" height="28" rx="14" fill="#1275B1" />
+                    <path
+                      d="M20.6186 17.6921C20.6186 18.6267 19.8085 19.3843 18.8093 19.3843C17.81 19.3843 17 18.6267 17 17.6921C17 16.7576 17.81 16 18.8093 16C19.8085 16 20.6186 16.7576 20.6186 17.6921Z"
+                      fill="white" />
+                    <path d="M17.2474 20.6281H20.3402V30H17.2474V20.6281Z" fill="white" />
+                    <path
+                      d="M25.3196 20.6281H22.2268V30H25.3196C25.3196 30 25.3196 27.0496 25.3196 25.2049C25.3196 24.0976 25.6977 22.9855 27.2062 22.9855C28.911 22.9855 28.9008 24.4345 28.8928 25.5571C28.8824 27.0244 28.9072 28.5219 28.9072 30H32V25.0537C31.9738 21.8954 31.1508 20.4401 28.4433 20.4401C26.8354 20.4401 25.8387 21.1701 25.3196 21.8305V20.6281Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </div>
+              <div class="footer-wrapper__social">
+                <a href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="#25232A" />
+                    <path
+                      d="M19.7887 36C16.5537 36 13.5382 35.0591 11 33.4356C13.155 33.5751 16.9581 33.2411 19.3236 30.9848C15.7651 30.8215 14.1603 28.0923 13.9509 26.926C14.2533 27.0426 15.6953 27.1826 16.5093 26.856C12.4159 25.8296 11.7879 22.2373 11.9275 21.141C12.695 21.6775 13.9975 21.8641 14.5091 21.8174C10.6948 19.0882 12.067 14.9828 12.7415 14.0963C15.4788 17.8887 19.5812 20.0186 24.6564 20.137C24.5607 19.7174 24.5102 19.2804 24.5102 18.8316C24.5102 15.6109 27.1134 13 30.3247 13C32.0025 13 33.5144 13.7128 34.5757 14.8528C35.6969 14.5901 37.3843 13.9751 38.2092 13.4432C37.7934 14.9361 36.4989 16.1815 35.7159 16.6431C35.7095 16.6273 35.7224 16.6588 35.7159 16.6431C36.4037 16.539 38.2648 16.1814 39 15.6826C38.6364 16.5213 37.264 17.9157 36.1377 18.6964C36.3473 27.9381 29.2765 36 19.7887 36Z"
+                      fill="#47ACDF" />
+                  </svg>
+                </a>
+              </div>
+              <div class="footer-wrapper__social">
+                <a href="#">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="#25232A" />
+                    <path
+                      d="M10.2445 17.9411C10.373 15.9623 11.9639 14.4116 13.9445 14.3134C16.8124 14.1714 20.9115 14 24 14C27.0885 14 31.1876 14.1714 34.0555 14.3134C36.0361 14.4116 37.627 15.9623 37.7555 17.9411C37.8786 19.8369 38 22.1697 38 24C38 25.8303 37.8786 28.1631 37.7555 30.0589C37.627 32.0377 36.0361 33.5884 34.0555 33.6866C31.1876 33.8286 27.0885 34 24 34C20.9115 34 16.8124 33.8286 13.9445 33.6866C11.9639 33.5884 10.373 32.0377 10.2445 30.0589C10.1214 28.1631 10 25.8303 10 24C10 22.1697 10.1214 19.8369 10.2445 17.9411Z"
+                      fill="#FC0D1B" />
+                    <path d="M21 20V28L29 24L21 20Z" fill="white" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-wrapper__left">
+            <div class="footer-wrapper__about footer-about">
+              <h6 class="footer-about__title footer-left-title">About</h6>
+              <div class="footer-about__links">
+                <a href="#" class="footer-about__link footer-left-link">About us</a>
+                <a href="#" class="footer-about__link footer-left-link">Ticket</a>
+                <a href="#" class="footer-about__link footer-left-link">Speaker</a>
+                <a href="#" class="footer-about__link footer-left-link">Schedule</a>
+                <a href="#" class="footer-about__link footer-left-link">In Press</a>
+              </div>
+            </div>
+            <div class="footer-wrapper__support footer-support">
+              <h6 class="footer-support__title footer-left-title">Support</h6>
+              <div class="footer-support__links">
+                <a href="#" class="footer-support__link footer-left-link">Contact us</a>
+                <a href="#" class="footer-support__link footer-left-link">Register</a>
+                <a href="#" class="footer-support__link footer-left-link">Sponsor</a>
+                <a href="#" class="footer-support__link footer-left-link">Telegram</a>
+                <a href="#" class="footer-support__link footer-left-link">Venue</a>
+              </div>
+            </div>
+            <div class="footer-wrapper__faq footer-faq">
+              <h6 class="footer-faq__title footer-left-title">FAQ</h6>
+              <div class="footer-faq__links">
+                <a href="#" class="footer-faq__link footer-left-link">Account</a>
+                <a href="#" class="footer-faq__link footer-left-link">Privacy Policy</a>
+                <a href="#" class="footer-faq__link footer-left-link">How its works</a>
+                <a href="#" class="footer-faq__link footer-left-link">Payments</a>
+                <a href="#" class="footer-faq__link footer-left-link">Returns</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-wrapper__copy">Copyright © Designer Meet 2022</div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
